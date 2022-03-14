@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RoomKoin</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="Dean_Jones">Dean Jones</string>
+    <string name="name">Name</string>
+    <string name="designation">Designation</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="update_name">Update Name</string>
+    <string name="update_designation">Update Designation</string>
+    <string name="cancel">cancel</string>
+    <string name="enter_user_details">Enter User Details</string>
+</resources>

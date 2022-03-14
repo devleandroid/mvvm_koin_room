@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/titleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_user_details"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/updateNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/update_name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/titleID" />
+
+    <EditText
+        android:id="@+id/updateDesignationID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/update_designation"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/updateNameID" />
+    <Button
+        android:id="@+id/updateUserBtnID"
+        app:layout_constraintStart_toStartOf="@id/updateDesignationID"
+        app:layout_constraintTop_toBottomOf="@id/updateDesignationID"
+        android:layout_marginTop="20dp"
+        android:text="@string/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/cancelBtnID"
+        app:layout_constraintEnd_toEndOf="@id/updateDesignationID"
+        app:layout_constraintTop_toBottomOf="@id/updateDesignationID"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancel"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
