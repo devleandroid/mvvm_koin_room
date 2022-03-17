@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import br.com.framework.mvvm.koin.data.db.UserDao
 import br.com.framework.mvvm.koin.data.model.DataModel
 
-class MainViewModel(val userDao: UserDao): ViewModel() {
+class MainViewModel(private val userDao: UserDao): ViewModel() {
     fun getAllUser(): LiveData<List<DataModel>> = userDao.getAllUser()
 
     fun addUser(userAdd: DataModel){

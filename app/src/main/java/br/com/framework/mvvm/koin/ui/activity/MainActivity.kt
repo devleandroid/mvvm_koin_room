@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity(), DataAdatptar.OnItemClickListener {
             if (it.isNotEmpty()){
                 userList.clear()
                 userList.addAll(it)
+                dataAdatptar.notifyDataSetChanged()
             } else {
                 userList.clear()
                 dataAdatptar.notifyDataSetChanged()
@@ -111,7 +112,7 @@ class MainActivity : AppCompatActivity(), DataAdatptar.OnItemClickListener {
         val deleteDialog: AlertDialog = AlertDialog.Builder(this).create()
         deleteDialog.setView(viewLayout)
         deleteDialog.show()
-        deleteDialog.updateDesignationID.setOnClickListener {
+        deleteDialog.updateUserBtnID.setOnClickListener {
             val name = deleteDialog.updateNameID.text.toString().trim()
             val designation = deleteDialog.updateDesignationID.text.toString().trim()
             CoroutineScope(Dispatchers.IO).launch {

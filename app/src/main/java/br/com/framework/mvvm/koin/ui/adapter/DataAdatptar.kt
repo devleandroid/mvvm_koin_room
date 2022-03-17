@@ -26,7 +26,7 @@ class DataAdatptar(private val dataList: List<DataModel>, private val listener: 
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val numberText = itemView.findViewById(R.id.nameID) as TextView
-        val messageText = itemView.findViewById(R.id.designationTextID) as TextView
+        val messageText = itemView.findViewById(R.id.designationID) as TextView
         val imageView = itemView.findViewById(R.id.imageViewID) as ImageView
 
         init {
